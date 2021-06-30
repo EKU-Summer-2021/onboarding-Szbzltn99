@@ -1,4 +1,12 @@
+"""
+csv file to dataframe
+"""
+import pandas as pd
+
+
 def csv_read(url):
-    import pandas as pd
-    df = pd.read_csv(url, header=None)
-    print(df)
+    """
+    reading csv file
+    """
+    csv_df = pd.read_csv(url, header=None)
+    print(csv_df)
