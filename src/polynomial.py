@@ -3,12 +3,13 @@ Polynomial module with a simple Polynomial example class.
 """
 import numpy as np
 
+
 class Polynomial():
     """
     Polynomial object which can be evaluated.
     """
 
-    __coeffs = [0] # type: np.ndarray
+    __coeffs = [0]  # type: np.ndarray
 
     def __init__(self, coeffs: np.ndarray):
         self.__coeffs = coeffs
