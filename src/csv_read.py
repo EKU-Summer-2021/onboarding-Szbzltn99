@@ -10,4 +10,3 @@ def csv_read(url):
     """
     csv_df = pd.read_csv(url, header=None)
     return csv_df
-
