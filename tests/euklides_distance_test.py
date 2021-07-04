@@ -4,8 +4,8 @@ import pandas
 import numpy as np
 
 
-class CsvReadTest(unittest.TestCase):
-    def test_csv_read_test(self):
+class EuklidesDistanceTest(unittest.TestCase):
+    def test_euklides_distance(self):
 
         data = pandas.DataFrame(np.zeros((1, 1)))
         expected = True

@@ -3,8 +3,8 @@ import math
 from src.euklides_list import euklides
 
 
-class CsvReadTest(unittest.TestCase):
-    def test_csv_read_test(self):
+class EuklidesListTest(unittest.TestCase):
+    def euklides_list_test(self):
         x_list_of_points = [1, 2]
         y_list_of_points = [3, 4]
         number = [math.sqrt(
