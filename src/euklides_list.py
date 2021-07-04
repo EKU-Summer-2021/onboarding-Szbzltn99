@@ -5,6 +5,9 @@ import math
 
 
 def euklides(x_list_of_points, y_list_of_points):
+    """
+    Calculating the euklides distances and putting them into a list
+    """
     eu_list = []
     i = -1
     while i < len(x_list_of_points)-1:

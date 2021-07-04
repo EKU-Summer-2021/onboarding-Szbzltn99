@@ -3,8 +3,12 @@ calculating the cost of a given path
 """
 
 
-def cost(dataframe, a, b, c, d, e, f, g, h, i, j):
-    s = dataframe[a-1][b-1]+dataframe[b-1][c-1]+dataframe[c-1][d-1] +\
-      dataframe[d-1][e-1]+dataframe[e-1][f-1]+dataframe[f-1][g-1] +\
-      dataframe[g-1][h-1]+dataframe[h-1][i-1]+dataframe[i-1][j-1]+dataframe[j-1][a-1]
-    print(s)
+def cost(dataframe, a1, b2, c3, d4, e5, f6, g7, h8, i9, j10):
+    result = dataframe[a1-1][b2-1]+dataframe[b2-1][c3-1]+dataframe[c3-1][d4-1] +\
+      dataframe[d4-1][e5-1]+dataframe[e5-1][f6-1]+dataframe[f6-1][g7-1] +\
+      dataframe[g7-1][h8-1]+dataframe[h8-1][i9-1]+dataframe[i9-1][j10-1]+dataframe[j10-1][a1-1]
+    """
+    calculating the cost of a given path
+    """
+
+    print(result)
