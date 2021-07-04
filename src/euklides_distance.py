@@ -11,7 +11,7 @@ def euklides_distance_matrix(dataframe, x_list_of_points, y_list_of_points):
     putting the calculated distances into a matrix from the list
     """
     i = -1
-    num_rows, num_cols = dataframe.shape
+    num_rows = len(dataframe)
     data = pd.DataFrame(np.zeros((num_rows, num_rows)))
     result_list = euklides(x_list_of_points, y_list_of_points)
     index = 0

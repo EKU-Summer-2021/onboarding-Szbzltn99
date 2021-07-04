@@ -3,10 +3,14 @@ calculating the cost of a given path
 """
 
 
-def cost(dataframe, a1, b2, c3, d4, e5, f6, g7, h8, i9, j10):
-    result = dataframe[a1-1][b2-1]+dataframe[b2-1][c3-1]+dataframe[c3-1][d4-1] +\
-      dataframe[d4-1][e5-1]+dataframe[e5-1][f6-1]+dataframe[f6-1][g7-1] +\
-      dataframe[g7-1][h8-1]+dataframe[h8-1][i9-1]+dataframe[i9-1][j10-1]+dataframe[j10-1][a1-1]
+# pylint: disable=too-many-arguments
+
+
+def cost(dataframe, first, second, third, fourth, fifth, sixth, seventh, eight, ninth, tenth):
+    result = dataframe[first - 1][second - 1] + dataframe[second - 1][third - 1] + dataframe[third - 1][fourth - 1] + \
+             dataframe[fourth - 1][fifth - 1] + dataframe[fifth - 1][sixth - 1] + dataframe[sixth - 1][seventh - 1] + \
+             dataframe[seventh - 1][eight - 1] + dataframe[eight - 1][ninth - 1] + dataframe[ninth - 1][tenth - 1] + \
+             dataframe[tenth - 1][first - 1]
     """
     calculating the cost of a given path
     """
