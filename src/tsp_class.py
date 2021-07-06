@@ -81,14 +81,14 @@ class TSP:
                         j = j + 1
         return data
 
-    def cost(self):
+    def cost(self, path):
         """
-        csv file to dataframe
+        cost function
         """
         result = 0
-        for i in range(len(self.path)-1):
-            result += self.matrix[self.path[i]][self.path[i+1]]
-        result += self.matrix[self.path[-1]][self.path[0]]
+        for i in range(len(path)-1):
+            result += self.matrix[path[i]][path[i+1]]
+        result += self.matrix[path[-1]][path[0]]
         print(result)
         return result
 
