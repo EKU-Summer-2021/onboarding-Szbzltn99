@@ -1,10 +1,10 @@
 """
 class to the TSP problem
 """
-from src.csv_read import csv_read
 import math
 import pandas as pd
 import numpy as np
+from src.csv_read import csv_read
 
 
 class TSP:
@@ -97,4 +97,5 @@ tsp = TSP(
     'https://github.com/EKU-Summer-2021/intelligent_system_data/blob/main/'
     'Intelligent%20System%20Data/TSP/10.csv'
     '?raw=true')
-tsp.cost()
+
+tsp.cost([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
