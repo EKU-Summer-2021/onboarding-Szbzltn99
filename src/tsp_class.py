@@ -16,7 +16,6 @@ class TSP:
         self.x_points, self.y_points = self.x_y_coordinates()
         self.matrix = self.euclidean_distance()
         self.path = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        print(self.matrix)
 
     def x_y_coordinates(self):
         """
@@ -89,13 +88,4 @@ class TSP:
         for i in range(len(path)-1):
             result += self.matrix[path[i]][path[i+1]]
         result += self.matrix[path[-1]][path[0]]
-        print(result)
         return result
-
-
-tsp = TSP(
-    'https://github.com/EKU-Summer-2021/intelligent_system_data/blob/main/'
-    'Intelligent%20System%20Data/TSP/10.csv'
-    '?raw=true')
-
-tsp.cost([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
